@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Isaac Vieco-Martí | AI & Biotech Projects</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans transition duration-300">
+
+  <!-- Header -->
+  <header class="text-center py-10 px-4 bg-gradient-to-r from-indigo-800 via-blue-700 to-cyan-600 text-white shadow-lg">
+    <h1 class="text-4xl font-extrabold tracking-tight drop-shadow-lg">Isaac Vieco-Martí</h1>
+    <p class="mt-4 text-l font-semibold tracking-wide opacity-95" 
+       data-en="Biotechnologist | AI & Digital Pathology" 
+       data-es="Biotecnólogo | IA y Patología Digital">
+      Biotechnologist | AI & Digital Pathology
+    </p>
+    <div class="mt-4 text-sm space-x-3">
+      <span id="lang-en" class="cursor-pointer underline font-semibold">EN</span>
+      <span>|</span>
+      <span id="lang-es" class="cursor-pointer">ES</span>
+    </div>
+  </header>
+  
+  <!-- Links -->
+  <section class="max-w-xl mx-auto mt-10 text-center flex justify-center gap-6 text-lg">
+    <a href="https://www.linkedin.com/in/isaac-vieco-mart%C3%AD-49a58a35b/" target="_blank" class="hover:text-blue-700 font-medium flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001zM2 9h6v12H2zM9 9h5.5v1.71h.08c.77-1.38 2.67-2.83 5.42-2.83C22 7.88 23 10 23 13.5V21h-6v-6.5c0-1.54-.03-3.5-2-3.5-2 0-2.31 1.63-2.31 3.39V21H9z"/></svg>
+      LinkedIn
+    </a>
+    <a href="https://github.com/iviecomarti" target="_blank" class="hover:text-blue-700 font-medium flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .297a12 12 0 0 0-3.797 23.4c.6.111.82-.261.82-.577 0-.285-.011-1.042-.017-2.046-3.338.726-4.042-1.61-4.042-1.61C4.422 17.07 3.633 16.7 3.633 16.7c-1.087-.743.083-.728.083-.728 1.204.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.775.42-1.305.763-1.605-2.665-.305-5.466-1.332-5.466-5.932 0-1.31.469-2.382 1.236-3.222-.123-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.49 11.49 0 0 1 3-.405c1.02.005 2.045.138 3 .405 2.292-1.552 3.297-1.23 3.297-1.23.654 1.652.242 2.873.12 3.176.77.84 1.236 1.912 1.236 3.222 0 4.61-2.804 5.624-5.475 5.921.432.372.816 1.102.816 2.222 0 1.606-.015 2.896-.015 3.29 0 .318.216.694.825.576A12.001 12.001 0 0 0 12 .297z"/></svg>
+      GitHub
+    </a>
+    <a href="https://youtube.com/@iviecomarti?si=bTbqyiHppT-u3tdd" target="_blank" class="hover:text-blue-700 font-medium flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.8-24.9-42.5-48.6-48.9C456.6 64 288 64 288 64s-168.6 0-213.1 11.2c-23.7 6.4-42.3 25.1-48.6 48.9C16 168.6 16 256 16 256s0 87.4 10.3 131.9c6.3 23.8 24.9 42.5 48.6 48.9C119.4 448 288 448 288 448s168.6 0 213.1-11.2c23.7-6.4 42.3-25.1 48.6-48.9C560 343.4 560 256 560 256s0-87.4-10.3-131.9zM232 336V176l142 80-142 80z"/></svg>
+      YouTube
+    </a>
+  </section>
+
+
+  <!-- Bio -->
+  <section class="max-w-4xl mx-auto mt-16 px-4">
+    <h2 class="text-2xl font-semibold mb-8 text-center" data-en="About Me" data-es="Sobre mí">About Me</h2>
+
+    <div class="bg-white border-2 border-blue-500 rounded-2xl shadow-md p-6 mb-8 flex flex-col md:flex-row md:items-center gap-6">
+      <div class="relative w-full md:w-[300px] h-64 overflow-hidden rounded-lg border border-blue-500 shadow-md">
+ 
+        <img src="./imgs/me_ghibli.png" alt="me_ghibli" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-top z-10" >
+      </div>
+      <div class="flex-1 text-justify">
+        
+        <p class="text-gray-700"
+          data-en="I’m a <strong>Biotechnologist</strong> with a Master’s in  <strong>Neuroscience</strong>, currently pursuing a PhD focused on artificial 3D tumor models of neuroblastoma. I specialize in <strong>digital pathology</strong>, and <strong>AI</strong> for biomedical image analysis. FPU scholarship"
+          data-es="Soy <strong>Biotecnólogo</strong> con un máster en <strong>Neurociencias</strong> y actualmente curso un doctorado centrado en modelos tumorales 3D artificiales de neuroblastoma. Especializado en <strong>patología digital</strong> e <strong>IA</strong> para análisis de imagen biomédica. Becario FPU">
+          I’m a <strong>Biotechnologist</strong> with a Master’s in  <strong>Neuroscience</strong>, currently pursuing a PhD focused on artificial 3D tumor models of neuroblastoma. I specialize in <strong>digital pathology</strong>, and <strong>AI</strong> for biomedical image analysis. FPU scholarship
+        </p>
+        
+      </div>
+    </div>
+
+    
+  </section>
+
+  <!-- Projects -->
+  <section class="max-w-4xl mx-auto mt-16 px-4">
+    <h2 class="text-2xl font-semibold mb-8 text-center" data-en="AI & Digital Pathology Projects" data-es="Proyectos patología digital e IA">AI & Digital Pathology Projects</h2>
+
+    <!-- Project 1: DANEELpath -->
+    <div class="bg-white border-2 border-blue-500 rounded-2xl shadow-md p-6 mb-8 flex flex-col md:flex-row md:items-center gap-6">
+      <div class="relative w-full md:w-[300px] h-64 overflow-hidden rounded-lg border border-blue-500 shadow-md">
+ 
+        <img src="./imgs/DANEELpath.png" alt="Processed DANEELpath" loading="lazy" class="absolute inset-0 w-full h-full object-cover z-10 ">
+      </div>
+      <div class="flex-1 text-justify">
+        <h3 class="text-xl font-bold mb-2" data-en="DANEELpath" data-es="DANEELpath">DANEELpath</h3>
+        <p class="text-gray-700"
+          data-en="<strong>DANEELpath</strong> is a QuPath toolkit designed to streamline the segmentation and spatial feature obtention from artificial 3D tumors of Neuroblastoma. Those 3D tumors are used to deep into tumor biology and drug testing. More <strong>DANEELpath</strong> info:"
+          data-es="<strong>DANEELpath</strong> es un set de herramientas para QuPath diseñada para facilitar la segmentación y la obtención de características espaciales en tumores artificiales 3D de neuroblastoma. Estos tumores se usan para ganar conocimiento en labiología del tumor y testaje de fármacos.  Más información de <strong>DANEELpath</strong>:">
+          <strong>DANEELpath</strong> is a QuPath toolkit designed to streamline the segmentation and spatial feature obtention from artificial 3D tumors of Neuroblastoma. Those 3D tumors are used to deep into tumor biology and drug testing. More <strong>DANEELpath</strong> info:
+        </p>
+        <div class="mt-3 text-sm">
+          <a href="https://www.youtube.com/watch?v=rr7qY1bVEHw" target="_blank" class="text-blue-600 underline mr-4" data-en="Overview Video" data-es="Vídeo de Presentación">Overview Video</a>
+          <a href="https://www.biorxiv.org/content/10.1101/2025.03.31.646267v1" target="_blank" class="text-blue-600 underline mr-4" data-en="Preprint" data-es="Preprint">Preprint</a>
+          <a href="https://github.com/iviecomarti/DANEELpath" target="_blank" class="text-blue-600 underline" data-en="GitHub" data-es="GitHub">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    <!-- Project 2: OvoPath -->
+    <div class="bg-white border-2 border-blue-500 rounded-2xl shadow-md p-6 mb-8 flex flex-col md:flex-row md:items-center gap-6">
+      <div class="relative w-full md:w-[300px] h-64 overflow-hidden rounded-lg border border-blue-500 shadow-md">
+ 
+        <img src="./imgs/ovopath.png" alt="ovopath" loading="lazy" class="absolute inset-0 w-full h-full object-cover z-10 ">
+      </div>
+      <div class="flex-1 text-justify">
+        <h3 class="text-xl font-bold mb-2" data-en="OvoPath" data-es="OvoPath">OvoPath</h3>
+        <p class="text-gray-700"
+          data-en="  <strong>OvoPath</strong> is an open-source tool for analyzing ovarian follicles in histological images on QuPath. It offers a streamlined, reproducible pipeline for follicle classification across stages, supporting standardized, high-throughput analysis in reproductive biology. More info:"
+          data-es="<strong>OvoPath</strong> es una herramienta de código abierto para analizar folículos ováricos en imágenes histológicas usando QuPath. Ofrece un flujo de trabajo reproducible y eficiente para clasificar folículos por etapas, facilitando un análisis estandarizado y de alto rendimiento en biología reproductiva. Más información:">
+          <strong>OvoPath</strong> is an open-source tool for analyzing ovarian follicles in histological images on QuPath. It offers a streamlined, reproducible pipeline for follicle classification across stages, supporting standardized, high-throughput analysis in reproductive biology. More info:
+        </p>
+        <div class="mt-3 text-sm">
+          <a href="https://academic.oup.com/biolreprod/article/112/3/416/7998800" target="_blank" class="text-blue-600 underline mr-4" data-en="Paper" data-es="Paper">Paper</a>
+          <a href="https://github.com/Sograap/OvoPath" target="_blank" class="text-blue-600 underline" data-en="GitHub" data-es="GitHub">GitHub</a>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Project 3: GISKARDscope -->
+    <div class="bg-white border-2 border-blue-500 rounded-2xl shadow-md p-6 mb-8 flex flex-col md:flex-row md:items-center gap-6">
+      <div class="relative w-full md:w-[300px] h-64 overflow-hidden rounded-lg border border-blue-500 shadow-md">
+ 
+        <img src="./imgs/giskardscope.png" alt="GISKARDscope" loading="lazy" class="absolute inset-0 w-full h-full object-cover z-10 ">
+      </div>
+      <div class="flex-1 text-justify">
+        <h3 class="text-xl font-bold mb-2" data-en="GISKARDscope" data-es="GISKARDscope">GISKARDscope</h3>
+        <p class="text-gray-700"
+          data-en=" <strong>GISKARDscope</strong>  is a prototype system that uses deep learning to analyze microscope images in real time. It’s designed to support pathologists by enhancing diagnostic speed and accuracy. Want to learn more? Let’s talk!"
+          data-es="<strong>GISKARDscope</strong> es un sistema experimental que utiliza modelos de deep learning para analizar imágenes histológicas en tiempo real. Está diseñado para asistir a patólogos, mejorando su velocidad y precisión diagnóstica. ¿Te interesa? ¡Hablemos!">
+          <strong>GISKARDscope</strong>  is a prototype system that uses deep learning to analyze microscope images in real time. It’s designed to support pathologists by enhancing diagnostic speed and accuracy. Want to learn more? Let’s talk!
+        </p>
+        
+      </div>
+    </div>
+  </section> 
+
+
+  <!-- Other Projects -->
+  <section class="max-w-4xl mx-auto mt-16 px-4">
+    <h2 class="text-2xl font-semibold mb-8 text-center" data-en="Other AI projects" data-es="Otros proyectos de IA">Other AI projects</h2>
+
+
+    <!-- Other Projects: ATLearningLab -->
+    <div class="bg-white border-2 border-blue-500 rounded-2xl shadow-md p-6 mb-8 flex flex-col md:flex-row md:items-center gap-6">
+      <div class="relative w-full md:w-[300px] h-64 overflow-hidden rounded-lg border border-blue-500 shadow-md">
+ 
+        <img src="./imgs/at_learning_lab.png" alt="ATLearningLab" loading="lazy" class="absolute inset-0 w-full h-full object-cover z-10 ">
+      </div>
+      <div class="flex-1 text-justify">
+        <h3 class="text-xl font-bold mb-2" data-en="ATLearningLab" data-es="ATLearningLab">ATLearningLab</h3>
+        <p class="text-gray-700"
+          data-en="Understanding finance is becoming increasingly important, but the field is often filled with noise and exaggerated claims. <strong>ATLearningLab</strong>  is an educational project where I explore ML/DL models on financial and market data, focusing on experimentation and thoughtful analysis."
+          data-es="Entender las finanzas es cada vez más importante, pero el sector suele estar lleno de ruido y afirmaciones exageradas. <strong>ATLearningLab</strong> es un proyecto educativo donde exploro modelos de ML/DL aplicados a datos financieros y de mercado, con un enfoque en la experimentación y el análisis riguroso.">
+          Understanding finance is becoming increasingly important, but the field is often filled with noise and exaggerated claims. <strong>ATLearningLab</strong>  is an educational project where I explore ML/DL models on financial and market data, focusing on experimentation and thoughtful analysis.
+        </p>
+
+      <div class="mt-3 text-sm">
+        <a href="https://youtube.com/@at_learninglab?si=Dd7HHmJXjSCWNL3U" target="_blank" class="text-blue-600 underline mr-4" data-en="YouTube Link" data-es="YouTube Link">YouTube Link</a>
+        
+      </div>
+        
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-blue-100 mt-16 text-sm"
+          data-en="Isaac Vieco-Martí"
+          data-es="Isaac Vieco-Martí">
+    Isaac Vieco-Martí 
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+</html>

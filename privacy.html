@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy | Política de Privacidad</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 text-gray-800 font-sans transition duration-300 p-6">
+
+  <!-- Header -->
+  <header class="max-w-3xl mx-auto text-center mb-8">
+    <h1 class="text-3xl font-bold mb-2"
+        data-en="Privacy Policy"
+        data-es="Política de Privacidad">Privacy Policy</h1>
+    <div class="text-sm">
+      <span id="lang-en" class="cursor-pointer underline font-semibold">EN</span>
+      <span class="mx-2">|</span>
+      <span id="lang-es" class="cursor-pointer">ES</span>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto leading-relaxed space-y-6">
+    
+    <section>
+      <h2 class="text-xl font-semibold"
+          data-en="1. No Data Collection"
+          data-es="1. No se recopilan datos">1. No Data Collection</h2>
+      <p data-en="This website does not collect personal information or use cookies directly. No analytics or trackers are active at this time."
+         data-es="Este sitio web no recopila información personal ni utiliza cookies directamente. No hay análisis ni rastreadores activos en este momento.">
+         This website does not collect personal information or use cookies directly. No analytics or trackers are active at this time.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold"
+          data-en="2. External Links"
+          data-es="2. Enlaces Externos">2. External Links</h2>
+      <p data-en="Some links may lead to third-party platforms such as YouTube. These services may set their own cookies or collect data. Please refer to their policies for more information."
+         data-es="Algunos enlaces pueden dirigir a plataformas externas como YouTube. Estos servicios pueden usar sus propias cookies o recopilar datos. Consulta sus políticas de privacidad para más información.">
+         Some links may lead to third-party platforms such as YouTube. These services may set their own cookies or collect data. Please refer to their policies for more information.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold"
+          data-en="3. Future Analytics Use"
+          data-es="3. Uso Futuro de Analíticas">3. Future Analytics Use</h2>
+      <p data-en="If analytics tools like Google Analytics are added in the future, this privacy policy will be updated accordingly."
+         data-es="Si en el futuro se añaden herramientas de analítica como Google Analytics, esta política de privacidad se actualizará.">
+         If analytics tools like Google Analytics are added in the future, this privacy policy will be updated accordingly.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold"
+          data-en="4. Contact"
+          data-es="4. Contacto">4. Contact</h2>
+      <p data-en="For any questions about privacy, feel free to reach out at:"
+         data-es="Si tienes preguntas sobre privacidad, puedes escribirme a:">
+         For any questions about privacy, feel free to reach out at:
+      </p>
+      <a href="danelgiskard@gmail.com" class="text-blue-600 underline">danelgiskard@gmail.com</a>
+    </section>
+
+  </main>
+
+  <!-- Language Switcher Script -->
+  <script>
+    let currentLang = 'en';
+
+    function updateLanguage(lang) {
+      currentLang = lang;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.dataset[lang];
+      });
+      document.getElementById('lang-en').classList.toggle('underline', lang === 'en');
+      document.getElementById('lang-en').classList.toggle('font-semibold', lang === 'en');
+      document.getElementById('lang-es').classList.toggle('underline', lang === 'es');
+      document.getElementById('lang-es').classList.toggle('font-semibold', lang === 'es');
+    }
+
+    document.getElementById('lang-en').addEventListener('click', () => updateLanguage('en'));
+    document.getElementById('lang-es').addEventListener('click', () => updateLanguage('es'));
+  </script>
+
+</body>
+</html>
